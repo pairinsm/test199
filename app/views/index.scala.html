@@ -1,0 +1,49 @@
+@()
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Websocket Chat-Room</title>
+        
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        
+        <div class="topbar">
+            <div class="fill">
+                <div class="container">
+                    <a class="brand" href="@routes.Application.index()">Novice Chat-Room</a> 
+                 
+                        <form action="@routes.Application.chatRoom()" class="pull-right">
+                        
+                            <input id="username" name="username" class="input-small" type="text" placeholder="Username">
+                            <br><br>
+                            <input id="username" name="password" class="input-small" type="text" placeholder="Password">
+                            <br><br>
+                            <button class="btn" type="submit">Log in</button> or
+                            <a href="@routes.Application.registerForm()"> Sign up </a>
+                            
+                          
+                        </form>
+                      
+                                        
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <footer>
+                <p>
+                    By Long Danielle Pairin
+                </p>
+            </footer>
+
+        </div>
+        
+    </body>
+</html>
